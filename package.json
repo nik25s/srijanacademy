@@ -1,0 +1,22 @@
+{
+  "name": "srijanacademy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subinsk/srijanacademy.git"
+  },
+  "author": "Subin S K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subinsk/srijanacademy/issues"
+  },
+  "homepage": "https://github.com/subinsk/srijanacademy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
