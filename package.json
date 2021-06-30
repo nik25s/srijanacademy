@@ -20,10 +20,11 @@
   "homepage": "https://github.com/subinsk/srijanacademy#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "mongoose": "^5.13.0",
     "nodemon": "^2.0.8",
     "pug": "^3.0.2"
   },
-  "engines":{
+  "engines": {
     "node": "^14.17.0"
   }
 }
