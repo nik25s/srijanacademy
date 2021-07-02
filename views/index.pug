@@ -4,12 +4,38 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.css")
+        //- link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.css")
+        link(rel="stylesheet", href="/css/index.css")
         title Srijan Academy | #{title}
     body
       .container 
-        header 
-            div Home 
+        header
+            div.header_one
+                ul 
+                    li 
+                        span Email us: 
+                
+                ul.login_header
+                    li 
+                        a(href="") Sign Up 
+                    li 
+                        a(href="") Log In 
+
+            
+            div.header_two
+                div#logo LOGO
+               
+                ul.navbar 
+                    li 
+                        a(href="").header_comp Home
+                    li 
+                        a(href="").header_comp Courses
+                    li 
+                        a(href="").header_comp Blog
+                    li 
+                        a(href="").header_comp Contact Us
+
+
         block content
         br
         hr
