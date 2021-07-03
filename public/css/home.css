@@ -1,0 +1,15 @@
+#home_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem;
+}
+
+.home_content{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 4rem;
+}
