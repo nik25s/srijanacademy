@@ -8,10 +8,22 @@ block js
 
 block home 
     div#content_block
+        div.dot-pulse
+            img(src="/assets/images/loading_logo.png")
         span.home_content Learn&nbsp;
             a(href="" class="typewrite" data-period="2000" data-type='[" Mathematics", " Science", " English"]').home_content 
         span.wrap
-     
+    .searchBar
+        form(action="", method="post")     
+            label(for="email")
+                b Search for your courses
+                br
+            input(type="text" placeholder="What are you looking for?" name="uname" required)
+            button.search-btn
+                img(src="/assets/images/searching.png", alt="Search", style="height:20px")
+                span Search
+                
+            
     
 
 

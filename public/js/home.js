@@ -1,19 +1,23 @@
-var i = 0;
-var txt = 'Learn Math, Science, English'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+// Loader and Typewriter
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("tw_hc").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+$(window).on("load",()=>{
+  $('.dot-pulse').css({"display":"none"});
+  var elements = document.getElementsByClassName('typewrite');
+  for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-type');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
   }
-}
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #5e17eb}";
+  document.body.appendChild(css);
+});
 
-$(window).on("load", function(){
-    typeWriter();
-})
-
+// Typewriter function
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -53,20 +57,4 @@ TxtType.prototype.tick = function() {
   setTimeout(function() {
   that.tick();
   }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('typewrite');
-  for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-type');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-  document.body.appendChild(css);
 };

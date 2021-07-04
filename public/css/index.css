@@ -30,7 +30,7 @@ header{
 }
 
 #signup_btn{
-    color: blueviolet;
+    color: #5e17eb;
     font-size: 1.2rem;
     font-weight: 700;
 
@@ -38,7 +38,7 @@ header{
 
 #login_btn{
     padding: 1rem;
-    background-color: blueviolet;
+    background-color: #5e17eb;
     color: white;
     font-size: 1.2rem;
     border-radius: 1.5rem;
@@ -78,8 +78,8 @@ a{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: blueviolet;
-    padding: 1rem;
+    background-color: #5e17eb;
+    padding: 0.5rem;
 }
 .navbar{
     display: flex;
@@ -97,7 +97,7 @@ a{
 }
 
 img{
-    height: 90px;
+    height: 60px;
     
 
 }
