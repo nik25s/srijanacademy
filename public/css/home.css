@@ -1,4 +1,4 @@
-#home_content{
+#content_block{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +10,6 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 0rem;
     font-size: 4rem;
 }

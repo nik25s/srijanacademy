@@ -1,4 +1,5 @@
 const express = require("express")
+// const connection = require("./src/models/connection")
 const path = require("path");
 const app = express();
 // const port = 80;
@@ -24,6 +25,16 @@ app.get("/",(req,res)=>{
 app.get('/courses',(req,res)=>{
     res.render('courses',{
         title:'Courses'
+    });
+});
+app.get('/login',(req,res)=>{
+    res.render('login',{
+        title:'Login'
+    });
+});
+app.get('/signup',(req,res)=>{
+    res.render('Signup',{
+        title:'Signup'
     });
 });
 

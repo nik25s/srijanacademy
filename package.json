@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app.js -e js,pug"
+    "dev": "nodemon src/app.js -e js,pug",
+    "ui": "browser-sync start --config bs-config.js"
   },
   "repository": {
     "type": "git",
@@ -19,12 +20,18 @@
   },
   "homepage": "https://github.com/subinsk/srijanacademy#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-browser-sync": "^2.1.0",
     "express": "^4.17.1",
-    "mongoose": "^5.13.0",
+    "express-handlebars": "^5.3.2",
+    "mongoose": "^5.13.1",
     "nodemon": "^2.0.9",
     "pug": "^3.0.2"
   },
   "engines": {
     "node": "^14.17.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.4"
   }
 }
